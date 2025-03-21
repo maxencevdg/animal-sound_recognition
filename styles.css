@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+body {
+    background-image: url("./images/arriere-plan.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.animal-section, .score-section, .record-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.animal-section, .record-section {
+    width: 350px; /* Ajuste selon tes préférences */
+    min-height: 280px; /* Assure une hauteur uniforme */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+}
+
+.animal-display img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.slider {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none; /* Hide all slides by default */
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.health-bar-container {
+    width: 100%;
+    height: 15px;
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.health-bar {
+    width: 100%;
+    height: 100%;
+    background: #4caf50;
+    transition: width 0.3s ease-in-out;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff3b3b;
+}
+
+#health-bar-container {
+    width: 100%;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+
+#health-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #4caf50;
+}
+
+#record-button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#status {
+    margin-top: 10px;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+}
